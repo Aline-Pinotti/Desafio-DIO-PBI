@@ -1,11 +1,11 @@
 ##### Alguns ajustes necessários para a inclusão da base de dados pelo Azure:
-<br>
+<br/>
 - Nos arquivo de criação das tabelas, haviam uns delete que não especificavam a deleção da constraint, assim o Bash da Azure procurava uma coluna para deletar. Por isso foi necessário ajustar o script para deletar as constraints.
-<br>
+<br/>
 - Para popular as tabelas, também foi necessário alguns ajustes, como reordenar os registros em employee, uma vez que estavam sendo incluídos gerentes que ainda não haviam sido cadastrados nas tabelas. Alterei a ordem, para que os gerentes fossem incluídos primeiro.
-<br><br>
+<br/><br/>
 ##### Agora o Power BI:
-<br>
+<br/>
 - Ao importar os dados do banco de dados na nuvem (criado no Azure), após selecionar todas as tabelas, foi utilizada a opção <i>Transformar Dados</i>, para fazer o devido tratamento.
 <br>
 - Removidas as colunas que o Power BI cria referente aos relacionamentos com outras tabelas (as necessárias serão inclusas posteriormente no <i>Join/Combinar</i>)
